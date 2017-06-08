@@ -1,0 +1,17 @@
+
+    <h1>Login</h1>
+
+    <form>
+        <input type="username" ng-model = "controller.username"
+        name="username" placeholder="username">
+        <input type="password" ng-model = "controller.password"
+        name="password" placeholder="password">
+        <button ng-click = "controller.login()">Login</button>
+    </form>
+    <br><br>
+    <div>
+      <a href="/register" ng-click="controller.register"><h1>Sign Up!</h1></a>
+      <!-- <li><a href="/admin" ng-click="controller.admin()">QuizMaster!</a></li> -->
+      <!-- <li style="list-style-type:none"><button class="btn btn-link" ng-click="controller.logout()">
+      Logout!</button></li> -->
+    </div>
