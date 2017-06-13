@@ -13,11 +13,11 @@ namespace quiz.Controllers{
 
     public login() {
       this.user = this.usersService.loginOrRegister(this.username, this.password, LOGIN)
-        .then(() => this.$state.go('quizmenu'));
+        .then(() => this.$state.go('about'));
     }
     public register() {
       this.user = this.usersService.loginOrRegister(this.regUsername, this.regPassword, REGISTER)
-        .then(() => this.$state.go('quizmenu'));
+        .then(() => this.$state.go('about'));
     }
     public logout() {
 

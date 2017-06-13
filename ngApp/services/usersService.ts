@@ -4,6 +4,7 @@ namespace quiz.Services {
     private userData;
     private previousState;
     private USER_RESOURCE = this.$resource('/api/usersApi/:action');
+    private ADMIN_RESOURCE = this.$resource('/api/usersApi/:id');
 
     constructor(private $resource, private $window, private $state) {}
 

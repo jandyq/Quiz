@@ -13,11 +13,16 @@
         "removeComments": true,
         "noLib": false,
         "preserveConstEnums": true,
-        "suppressImplicitAnyIndexErrors": true
+        "suppressImplicitAnyIndexErrors": true,
+        "sourceMap": true
     },
     "compileOnSave": true,
     "buildOnSave": false,
     "atom": {
         "rewriteTsconfig": false
-    }
+    },
+    "exclude": [
+        "bower_components",
+        "node_modules"
+    ]
 }
