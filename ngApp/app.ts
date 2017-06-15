@@ -19,6 +19,7 @@ namespace quiz {
                 controller: quiz.Controllers.AboutController,
                 controllerAs: 'controller'
             })
+
             .state('admin', {
               url: '/admin',
               templateUrl: '/ngApp/views/admin.html',
@@ -26,7 +27,7 @@ namespace quiz {
               controllerAs: 'controller',
               data: {
                 isLoggedIn: true,
-                privileges: 'A'
+                privileges: 'U'
               }
             })
             .state('register', {
